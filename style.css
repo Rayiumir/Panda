@@ -1,0 +1,20 @@
+@font-face {
+    font-family: UbuntuMono;
+    src: url('/fonts/Ubuntu-Regular.woff2') format('woff2');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* @font-face {
+    font-family: UbuntuMono;
+    src: url('/fonts/Ubuntu-Bold.woff2') format('woff2');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+} */
+body{
+    background-color: #ecf0f1;
+    font-family: UbuntuMono;
+    color: #34495e;
+}
