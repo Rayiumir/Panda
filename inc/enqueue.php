@@ -3,7 +3,7 @@
 define("RAYIUM_URL", get_template_directory_uri());
 define("RAYIUM_STYLE", get_stylesheet_uri());
 define("RAYIUM_PARCHLINUX_VERSION", '1.0.0');
-define("RAYIUM_PARCHLINUX_ASSETS_VERSION", defined('WP_DEBUG') && WP_DEBUG ? time() : RAYIUM_COURSE_VERSION);
+define("RAYIUM_PARCHLINUX_ASSETS_VERSION", defined('WP_DEBUG') && WP_DEBUG ? time() : RAYIUM_PARCHLINUX_VERSION);
 
 // Calling Files style
 
