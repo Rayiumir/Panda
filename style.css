@@ -9,7 +9,7 @@ Version: 1.0.0
 
 @font-face {
     font-family: UbuntuMono;
-    src: url('/fonts/Ubuntu-Regular.woff2') format('woff2');
+    src: url('fonts/Ubuntu-Regular.woff2') format('woff2');
     font-weight: 300;
     font-style: normal;
     font-display: swap;
@@ -22,8 +22,21 @@ Version: 1.0.0
     font-style: normal;
     font-display: swap;
 } */
-body{
-    background-color: #ecf0f1;
+body {
     font-family: UbuntuMono;
+    background-color: #ecf0f1;
     color: #34495e;
+}
+
+/* Menus */
+
+.dropdown-item{
+    border-radius: 15px;
+}
+/* Posts */
+
+a.liked span.sl-count,
+.sl-count {
+    font-size: 16px;
+    font-family: inherit;
 }
