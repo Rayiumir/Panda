@@ -76,3 +76,27 @@ function remove_site_health_menu(){
     remove_submenu_page( 'tools.php','site-health.php' );
 }
 add_filter( 'wp_fatal_error_handler_enabled', '__return_false' );
+
+// Add Table Of Contents
+
+function add_table_of_contents($content) {
+    if (is_singular('post') && is_main_query()) {
+        $pattern = '/<h([2-6]).*?>(.*?)<\/h[2-6]>/';
+        if (preg_match_all($pattern, $content, $matches, PREG_SET_ORDER)) {
+            $output = '<div class="card mt-4 mb-4 rounded-5"><details class="js-list">';
+            $output .= '<summary class="title js-title"><i class="fa-light fa-list-dots"></i> <h3 class="fs-5 mt-1">فهرست محتوا</h3> <span class="icon"></span></summary>';
+            $output .= '<div class="content js-content"><ul class="mt-3">';
+            foreach ($matches as $match) {
+                $level = $match[1];
+                $title = $match[2];
+                $slug = sanitize_title($title);
+                $output .= '<li class="mb-2 toc-level-' . $level . '"><a href="#' . $slug . '">' . $title . '</a></li>';
+                $content = str_replace($match[0], '<h' . $level . ' id="' . $slug . '">' . $title . '</h' . $level . '>', $content);
+            }
+            $output .= '</ul></div>';
+            $output .= '</details></div>';
+            $content = $output . $content;
+        }
+    }
+    return $content;
+}
