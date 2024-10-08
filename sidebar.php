@@ -61,4 +61,5 @@
         </div>
     </div>
 </div>
+<?php dynamic_sidebar("sidebar"); ?> 
 <!-- End Sidebars -->

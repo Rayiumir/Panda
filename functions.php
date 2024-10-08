@@ -115,3 +115,20 @@ function estimate_study_duration(){
     return $estimate_duration_html;
 }
 add_shortcode('studyduration', 'estimate_study_duration');
+
+// Widgets Sidebar Right
+
+function Rayium_widgets_init()
+{
+    register_sidebar(
+        array(
+            'name'=>'Sidebar Right',
+            'id'=>'sidebar',
+            'before_widget'=>'<div class="card rounded-4 shadow-sm mb-3"><div class="card-body">',
+            'after_widget'=>'</div></div>',
+            'before_title'  => '<h1 class="fs-5 fw-bold mb-3">',
+		    'after_title'   => '</h1>',
+        )
+    );
+}
+add_action('widgets_init','Rayium_widgets_init');

@@ -90,7 +90,9 @@ a.liked span.sl-count,
 .copied:after {
     content: attr(title)
 }
-
+ ul li a{
+    text-decoration: none;
+}
 /* Comments */
 
 ol.commentlist li {
