@@ -100,3 +100,18 @@ function add_table_of_contents($content) {
     }
     return $content;
 }
+
+// Estimate Study Duration
+
+function estimate_study_duration(){
+    $content_text           = strip_tags( get_the_content() );
+    $content_words          = explode( ' ', $content_text );
+    $word_count             = count( $content_words );
+    $estimate_duration      = round( $word_count / 200 );
+    $estimate_duration_html = '<p>';
+        $estimate_duration_html.= '';
+        $estimate_duration_html.= $estimate_duration . ' Minutes';
+    $estimate_duration_html.= '</p>';
+    return $estimate_duration_html;
+}
+add_shortcode('studyduration', 'estimate_study_duration');

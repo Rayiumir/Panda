@@ -66,9 +66,14 @@ a.liked span.sl-count,
     padding: 10px;
 }
 
-.aligncenter img{
+.aligncenter img {
     border-radius: 15px;
 }
+
+.time {
+    display: block ruby;
+}
+
 /* Sidebars */
 
 .box {

@@ -8,7 +8,14 @@
                     <figure>
                         <?php echo the_post_thumbnail('full', ['class' => 'img-fluid rounded-4 mb-3'])?>
                     </figure>
-                    <h1 class="fs-3 fw-bold"><?php the_title() ?></h1>
+                    <div class="row">
+                        <div class="col-md-10">
+                            <h1 class="fs-4 fw-bold"><?php the_title() ?></h1>
+                        </div>
+                        <div class="col-md-2 time">
+                            <i class="fa-duotone fa-timer"></i> <?php echo do_shortcode( '[studyduration]' ); ?>
+                        </div>
+                    </div>
                     <?php the_content() ?>
                     <?php echo get_simple_likes_button(get_the_ID()); ?>
                     <i class="fa-duotone fa-calendar-days"></i>  <?php the_time('F j, Y') ?>
