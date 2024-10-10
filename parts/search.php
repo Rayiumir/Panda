@@ -1,8 +1,11 @@
-<!-- Post Index -->
+<!-- Page Search Index -->
 <div class="mt-3 mb-3">
     <div class="row">
         <!-- Posts -->
         <section class="col-md-8">
+            <div class="alert alert-success rounded-4" role="alert">
+                <i class="fa-duotone fa-search"></i> <?php printf( __( 'Search Results for : %s' ), get_search_query() ); ?>
+            </div>
             <?php
                 if(have_posts(  )){
                     while(have_posts(  )){
@@ -32,4 +35,4 @@
         </aside>
     </div>
 </div>
-<!-- End Post Index -->
+<!-- End Page Search Index -->

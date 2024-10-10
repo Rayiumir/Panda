@@ -1,4 +1,4 @@
-<!-- Single Page -->
+<!-- 404 Page -->
 <div class="mt-3 mb-3">
     <div class="row">
         <!-- Posts -->
@@ -17,4 +17,4 @@
         
     </div>
 </div>
-<!-- End Single Page -->
+<!-- End 404 Page -->
