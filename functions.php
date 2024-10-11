@@ -14,7 +14,8 @@ if (function_exists('add_theme_support')) {
 
 // Enable Menus
 
-register_nav_menu('menu-one', 'Menu First');
+register_nav_menu('menu-one', 'Menu Header');
+register_nav_menu('menu-two', 'Menu Footer');
 
 // View Posts
 

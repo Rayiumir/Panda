@@ -37,7 +37,7 @@ array(
 ),
 
 array(
-  'id'          => 'logo_',
+  'id'          => 'logo',
   'label'       => 'Logo',
   'desc'        => '',
   'std'         => '',
