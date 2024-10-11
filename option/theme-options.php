@@ -110,8 +110,8 @@ array(
     'section'     => 'onoff'
 ),
 array(
-    'id'          => 'Sort URL',
-    'label'       => 'Logo',
+    'id'          => 'off_9',
+    'label'       => 'Comments',
     'desc'        => '',
     'std'         => '',
     'type'        => 'on-off',

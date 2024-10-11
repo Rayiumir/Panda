@@ -33,11 +33,14 @@
                     </div>
                 </div>
             </article>
+            <?php   if ( ot_get_option('off_5') != "off" ) {    ?>
             <div class="card shadow-sm rounded-4 mb-3">
                 <div class="card-body tags">
                     <i class="fa-duotone fa-tags"></i> <?php the_tags('',',','')?>
                 </div>
             </div>
+            <?php   }   ?>
+            <?php   if ( ot_get_option('off_6') != "off" ) {    ?>
             <div class="card rounded-4 mb-3">
                 <div class="card-body">
                     <div class="text-start fs-6">
@@ -89,14 +92,18 @@
                     </ul>
                 </div>
             </div>
+            <?php   }   ?>
+            <?php   if ( ot_get_option('off_9') != "off" ) {    ?>
             <div class="card rounded-4 mb-3">
                 <div class="card-body">
                     <?php comments_template(); ?>
                 </div>
             </div>
+            <?php   }   ?>
         </section>
         <!-- End Posts -->
         <aside class="col-md-4">
+            <?php   if ( ot_get_option('off_7') != "off" ) {    ?>
             <div class="card rounded-4 mb-3 p-3">
                 <h2 class="fs-5 fw-bold">
                     Sort URL
@@ -108,6 +115,8 @@
                     </button>
                 </span>
             </div>
+            <?php   }   ?>
+            <?php   if ( ot_get_option('off_8') != "off" ) {    ?>
             <div class="card border-0 shadow-sm rounded-4 mb-3">
                 <div class="card-body">
                     <div class="text-center">
@@ -119,6 +128,7 @@
                     <?php the_author_meta('description'); ?>
                 </div>
             </div>
+            <?php   }   ?>
             <?php get_sidebar() ?>
         </aside>
         

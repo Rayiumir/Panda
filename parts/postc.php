@@ -27,7 +27,7 @@
                         </article>
                     </a>
                 </div>
-                <?php } } ?>
+                <?php   }   }   ?>
             </div>
         </section>
         <!-- End Posts -->

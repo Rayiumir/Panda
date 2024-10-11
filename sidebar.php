@@ -1,4 +1,5 @@
 <!-- Sidebars -->
+<?php   if ( ot_get_option('off_3') != "off" ) {    ?>
 <div class="card rounded-4 shadow-sm mb-3">
     <div class="card-body">
         <h1 class="fs-5 fw-bold mb-3">Search</h1>
@@ -8,6 +9,8 @@
         </form>
     </div>
 </div>
+<?php   }   ?>
+<?php   if ( ot_get_option('off_4') != "off" ) {    ?>
 <div class="card rounded-4 shadow-sm mb-3">
     <div class="card-body">
         <nav>
@@ -66,5 +69,6 @@
         </div>
     </div>
 </div>
+<?php   }   ?>
 <?php dynamic_sidebar("sidebar"); ?> 
 <!-- End Sidebars -->

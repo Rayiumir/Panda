@@ -27,7 +27,7 @@
                     </div>
                 </article>
             </a>
-            <?php } } ?>
+            <?php   }   }   ?>
         </section>
         <!-- End Posts -->
         <aside class="col-md-4">
