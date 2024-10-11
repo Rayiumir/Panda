@@ -33,7 +33,7 @@ body {
 }
 
 a {
-    color: #34495e;
+    /* color: #34495e; */
     text-decoration: none;
 }
 
@@ -95,9 +95,11 @@ a.liked span.sl-count,
 .copied:after {
     content: attr(title)
 }
- ul li a{
+
+ul li a {
     text-decoration: none;
 }
+
 /* Comments */
 
 ol.commentlist li {
@@ -167,4 +169,44 @@ h3.postcomment a {
 h3.postcomment,
 h3.postcomment a {
     font-size: large;
+}
+
+/* Dark Mode */
+
+[data-theme="dark"] {
+    background-color: #304254 !important;
+}
+
+[data-theme="dark"] .bg-light {
+    background-color: #0e2338 !important;
+}
+
+[data-theme="dark"] .navbar {
+    background-color: #0e2338 !important;
+}
+
+[data-theme="dark"] .nav-link{
+    color: #fff !important;
+}
+
+[data-theme="dark"] h1{
+    color: #fff !important;
+}
+
+[data-theme="dark"] a{
+    color: #fff !important;
+}
+
+[data-theme="dark"] p{
+    color: #fff !important;
+}
+
+[data-theme="dark"] .card {
+    background-color: #0e2338 !important;
+    color: #fff;
+}
+
+[data-theme="dark"] .list-group-item {
+    background-color: #0e2338 !important;
+    color: #fff;
 }

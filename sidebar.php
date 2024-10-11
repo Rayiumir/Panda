@@ -43,7 +43,7 @@
                                 $recent_post->the_post();
                         ?> 
                         <li class="mb-2 list-group-item list-group-item-action rounded-5">
-                            <a href="<?php the_permalink(); ?>" target="_blank" class="text-decoration-none text-dark"><?php the_title(); ?><i class="fa-duotone fa-angle-double-right float-end mt-1"></i></a>
+                            <a href="<?php the_permalink(); ?>" target="_blank"><?php the_title(); ?><i class="fa-duotone fa-angle-double-right float-end mt-1"></i></a>
                         </li>
                         <?php 
                             endwhile;

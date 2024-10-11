@@ -8,7 +8,7 @@
                     while(have_posts(  )){
                         the_post();
             ?>
-            <a href="<?php the_permalink() ?>" class="text-decoration-none">
+            <a href="<?php the_permalink() ?>">
                 <article class="card shadow-sm rounded-4 mb-3">
                     <div class="card-body">
                         <figure>
