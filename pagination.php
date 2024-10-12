@@ -48,8 +48,8 @@ function bootstrap_pagination( \WP_Query $wp_query = null, $echo = true, $params
             'end_size'     => 3,
             'mid_size'     => 1,
             'prev_next'    => true,
-            'prev_text'    => __( '« قبلی' ),
-            'next_text'    => __( 'بعدی »' ),
+            'prev_text'    => __( '« Prev' ),
+            'next_text'    => __( 'Next »' ),
             'add_args'     => $add_args,
             'add_fragment' => ''
         ], $params )

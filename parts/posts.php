@@ -25,6 +25,7 @@
                 </article>
             </a>
             <?php   }   }   ?>
+            <?php echo bootstrap_pagination(); ?>
         </section>
         <!-- End Posts -->
         <aside class="col-md-4">

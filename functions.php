@@ -5,6 +5,7 @@
 require_once ('inc/enqueue.php');
 require_once ('like.php');
 require_once ('navbar.php');
+require_once ('pagination.php');
 
 // Enable Post Thumbnails
 

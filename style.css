@@ -210,3 +210,8 @@ h3.postcomment a {
     background-color: #0e2338 !important;
     color: #fff;
 }
+
+[data-theme="dark"] .page-link {
+    background-color: #0e2338 !important;
+    color: #fff;
+}
