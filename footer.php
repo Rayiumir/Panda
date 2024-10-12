@@ -1,5 +1,5 @@
 <!-- footer -->
-<footer class="card rounded-4 shadow-sm mb-3">
+<footer class="card rounded-4 shadow-sm mb-3 border-0">
             <div class="card-body">
                 <div class="row">
                     <div class="col-md-6">

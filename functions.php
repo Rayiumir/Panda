@@ -79,30 +79,6 @@ function remove_site_health_menu(){
 }
 add_filter( 'wp_fatal_error_handler_enabled', '__return_false' );
 
-// Add Table Of Contents
-
-function add_table_of_contents($content) {
-    if (is_singular('post') && is_main_query()) {
-        $pattern = '/<h([2-6]).*?>(.*?)<\/h[2-6]>/';
-        if (preg_match_all($pattern, $content, $matches, PREG_SET_ORDER)) {
-            $output = '<div class="card mt-4 mb-4 rounded-5"><details class="js-list">';
-            $output .= '<summary class="title js-title"><i class="fa-light fa-list-dots"></i> <h3 class="fs-5 mt-1">فهرست محتوا</h3> <span class="icon"></span></summary>';
-            $output .= '<div class="content js-content"><ul class="mt-3">';
-            foreach ($matches as $match) {
-                $level = $match[1];
-                $title = $match[2];
-                $slug = sanitize_title($title);
-                $output .= '<li class="mb-2 toc-level-' . $level . '"><a href="#' . $slug . '">' . $title . '</a></li>';
-                $content = str_replace($match[0], '<h' . $level . ' id="' . $slug . '">' . $title . '</h' . $level . '>', $content);
-            }
-            $output .= '</ul></div>';
-            $output .= '</details></div>';
-            $content = $output . $content;
-        }
-    }
-    return $content;
-}
-
 // Estimate Study Duration
 
 function estimate_study_duration(){
@@ -126,7 +102,7 @@ function Rayium_widgets_init()
         array(
             'name'=>'Sidebar Right',
             'id'=>'sidebar',
-            'before_widget'=>'<div class="card rounded-4 shadow-sm mb-3"><div class="card-body">',
+            'before_widget'=>'<div class="card rounded-4 shadow-sm mb-3 border-0"><div class="card-body">',
             'after_widget'=>'</div></div>',
             'before_title'  => '<h1 class="fs-5 fw-bold mb-3">',
 		    'after_title'   => '</h1>',

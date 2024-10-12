@@ -3,7 +3,7 @@
     <div class="row">
         <!-- Posts -->
         <section class="col-md-8">
-            <div class="alert alert-success rounded-4" role="alert">
+            <div class="alert alert-success rounded-4 border-0" role="alert">
                 <i class="fa-duotone fa-search"></i> <?php printf( __( 'Search Results for : %s' ), get_search_query() ); ?>
             </div>
             <?php
@@ -12,7 +12,7 @@
                         the_post();
             ?>
             <a href="<?php the_permalink() ?>" class="text-decoration-none">
-                <article class="card shadow-sm rounded-4 mb-3">
+                <article class="card shadow-sm rounded-4 mb-3 border-0">
                     <div class="card-body">
                         <figure>
                             <?php echo the_post_thumbnail('full', ['class' => 'img-fluid rounded-4 mb-3'])?>

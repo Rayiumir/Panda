@@ -9,7 +9,7 @@
                         the_post();
             ?>
             <a href="<?php the_permalink() ?>">
-                <article class="card shadow-sm rounded-4 mb-3">
+                <article class="card shadow-sm rounded-4 mb-3 border-0">
                     <div class="card-body">
                         <figure>
                             <?php echo the_post_thumbnail('full', ['class' => 'img-fluid rounded-4 mb-3'])?>

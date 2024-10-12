@@ -3,7 +3,7 @@
     <div class="row">
         <!-- Posts -->
         <section class="col-md-8">
-            <article class="card shadow-sm rounded-4 mb-3">
+            <article class="card shadow-sm rounded-4 mb-3 border-0">
                 <div class="card-body">
                     <figure>
                         <?php echo the_post_thumbnail('full', ['class' => 'img-fluid rounded-4 mb-3'])?>
@@ -34,14 +34,14 @@
                 </div>
             </article>
             <?php   if ( ot_get_option('off_5') != "off" ) {    ?>
-            <div class="card shadow-sm rounded-4 mb-3">
+            <div class="card shadow-sm rounded-4 mb-3 border-0">
                 <div class="card-body tags">
                     <i class="fa-duotone fa-tags"></i> <?php the_tags('',',','')?>
                 </div>
             </div>
             <?php   }   ?>
             <?php   if ( ot_get_option('off_6') != "off" ) {    ?>
-            <div class="card rounded-4 mb-3">
+            <div class="card shadow-sm rounded-4 mb-3 border-0">
                 <div class="card-body">
                     <div class="text-start fs-6">
                         <i class="fa-duotone fa-list-radio"></i> <span class="fw-bold">Related Posts</span>
@@ -94,7 +94,7 @@
             </div>
             <?php   }   ?>
             <?php   if ( ot_get_option('off_9') != "off" ) {    ?>
-            <div class="card rounded-4 mb-3">
+            <div class="card shadow-sm rounded-4 mb-3 border-0">
                 <div class="card-body">
                     <?php comments_template(); ?>
                 </div>
@@ -104,7 +104,7 @@
         <!-- End Posts -->
         <aside class="col-md-4">
             <?php   if ( ot_get_option('off_7') != "off" ) {    ?>
-            <div class="card rounded-4 mb-3 p-3">
+            <div class="card shadow-sm rounded-4 mb-3 p-3 border-0">
                 <h2 class="fs-5 fw-bold">
                     Sort URL
                 </h2>

@@ -1,6 +1,6 @@
 <!-- Sidebars -->
 <?php   if ( ot_get_option('off_3') != "off" ) {    ?>
-<div class="card rounded-4 shadow-sm mb-3">
+<div class="card rounded-4 shadow-sm mb-3 border-0">
     <div class="card-body">
         <h1 class="fs-5 fw-bold mb-3">Search</h1>
         <form role="search" action="<?php bloginfo('url'); ?>" method="get">
@@ -11,7 +11,7 @@
 </div>
 <?php   }   ?>
 <?php   if ( ot_get_option('off_4') != "off" ) {    ?>
-<div class="card rounded-4 shadow-sm mb-3">
+<div class="card rounded-4 shadow-sm mb-3 border-0">
     <div class="card-body">
         <nav>
             <div class="nav nav-pills nav-fill gap-2 p-1 small bg-light rounded-5" id="nav-tab"
