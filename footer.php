@@ -1,5 +1,5 @@
 <!-- footer -->
-<footer class="card rounded-4 shadow-sm mb-3 border-0">
+        <footer class="card rounded-4 shadow-sm mb-3 border-0">
             <div class="card-body">
                 <div class="row">
                     <div class="col-md-6">
@@ -19,6 +19,8 @@
                         </div>
                     </div>
                 </div>
+                <hr>
+                <div class="text-center">Designed and coded by <i class="fa-duotone fa-heart text-danger"></i> <a href="https://github.com/Rayiumir/Panda" class="text-decoration-none">Panda</a> </div>
             </div>
         </footer>
         <!-- End Footer -->
