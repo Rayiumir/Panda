@@ -58,24 +58,8 @@ function Rayium_Scripts(): void {
         '5.3.0',
         true
     );
-
-    wp_enqueue_script(
-        'likes',
-        RAYIUM_URL . '/js/likes.js',
-        $deps,
-        '5.0.0',
-        true
-    );
-
-    wp_enqueue_script(
-        'darkmode',
-        RAYIUM_URL . '/js/darkmode.js',
-        $deps,
-        '5.0.0',
-        true
-    );
-
 }
 add_action('wp_footer', 'Rayium_Scripts');
+
 
 

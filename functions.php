@@ -121,3 +121,10 @@ add_filter( 'ot_meta_boxes', '__return_true' );
 include_once( 'option/option-tree/ot-loader.php' );
 include_once( 'option/theme-options.php' );
 include_once( 'option/theme-metabox.php' );
+
+// Disables the block editor for WordPress widgets
+
+function disable_widgets_block_editor() {
+	remove_theme_support( 'widgets-block-editor' );
+}
+add_action( 'after_setup_theme', 'disable_widgets_block_editor' );

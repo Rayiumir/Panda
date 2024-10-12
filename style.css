@@ -185,19 +185,19 @@ h3.postcomment a {
     background-color: #0e2338 !important;
 }
 
-[data-theme="dark"] .nav-link{
+[data-theme="dark"] .nav-link {
     color: #fff !important;
 }
 
-[data-theme="dark"] h1{
+[data-theme="dark"] h1 {
     color: #fff !important;
 }
 
-[data-theme="dark"] a{
+[data-theme="dark"] a {
     color: #fff !important;
 }
 
-[data-theme="dark"] p{
+[data-theme="dark"] p {
     color: #fff !important;
 }
 
@@ -214,4 +214,91 @@ h3.postcomment a {
 [data-theme="dark"] .page-link {
     background-color: #0e2338 !important;
     color: #fff;
+}
+
+[data-theme="dark"] #wp-calendar tbody td {
+    border: 1px solid #0e2338 !important;
+}
+
+[data-theme="dark"] #today a {
+    color: red !important;
+}
+
+[data-theme="dark"] .wp-calendar-table caption {
+    color: #fff !important;
+}
+
+/* GT Translate */
+
+.gt_white_content.notranslate {
+    border-radius: 15px;
+}
+
+/* Calendar */
+
+.widget_calendar {
+    float: left;
+}
+
+#wp-calendar {
+    width: 100%;
+}
+
+#wp-calendar caption {
+    text-align: right;
+    color: #333;
+    font-size: 12px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+#wp-calendar thead {
+    font-size: 10px;
+}
+
+#wp-calendar thead th {
+    padding-bottom: 10px;
+}
+
+#wp-calendar tbody {
+    color: #0e2338;
+}
+
+#wp-calendar tbody td {
+    background: #f5f5f5;
+    border: 1px solid #fff;
+    text-align: center;
+    padding: 8px;
+}
+
+#wp-calendar tbody td:hover {
+    background: #fff;
+}
+
+#wp-calendar tbody .pad {
+    background: none;
+}
+
+#today a {
+    color: red !important;
+}
+
+#wp-calendar tfoot #next {
+    font-size: 10px;
+    text-transform: uppercase;
+    text-align: right;
+}
+
+#wp-calendar tfoot #prev {
+    font-size: 10px;
+    text-transform: uppercase;
+    padding-top: 10px;
+}
+
+#calendar_wrap {
+    margin-top: 20px;
+}
+
+#wp-calendar tbody td {
+    border-radius: 15px;
 }
