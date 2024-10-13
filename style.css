@@ -11,23 +11,15 @@ Requires PHP: 7.0
 Tags: Blog, Theme Blog, Blog news, news
 */
 
-@font-face {
-    font-family: UbuntuMono;
-    src: url('fonts/Ubuntu-Regular.woff2') format('woff2');
-    font-weight: 300;
-    font-style: normal;
-    font-display: swap;
-}
+/* Import the fonts */
 
-/* @font-face {
-    font-family: UbuntuMono;
-    src: url('/fonts/Ubuntu-Bold.woff2') format('woff2');
-    font-weight: 300;
-    font-style: normal;
-    font-display: swap;
-} */
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Vazirmatn&display=swap');
+
+/* HTML */
+
 body {
-    font-family: UbuntuMono;
+    font-family: 'Vazirmatn', 'Ubuntu Mono', monospace;
     background-color: #ecf0f1;
     color: #34495e;
 }
@@ -98,6 +90,10 @@ a.liked span.sl-count,
 
 ul li a {
     text-decoration: none;
+}
+
+.imgauthor img {
+    border-radius: 15px;
 }
 
 /* Comments */
@@ -238,6 +234,11 @@ h3.postcomment a {
 
 [data-theme="dark"] #heart-full {
     color: red !important;
+}
+
+[data-theme="dark"] input,
+textarea {
+    background-color: #0e2338 !important;
 }
 
 /* GT Translate */
