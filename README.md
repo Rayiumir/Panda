@@ -10,8 +10,6 @@ This is a simple and light theme for WordPress blogging.
 
 # ScreenShot
 
-## Demos
-
 <table class="table">
   <thead>
     <tr>
