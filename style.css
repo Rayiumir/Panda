@@ -236,6 +236,10 @@ h3.postcomment a {
     color: #fff !important;
 }
 
+[data-theme="dark"] #heart-full {
+    color: red !important;
+}
+
 /* GT Translate */
 
 .gt_white_content.notranslate {
