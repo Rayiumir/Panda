@@ -2,6 +2,7 @@
     <a href="https://github.com/Rayiumir/Panda" target="_blank">
         <img src="https://raw.githubusercontent.com/Rayiumir/Panda/refs/heads/main/art/PandaThemeLogo.png" alt="Panda Theme">
     </a>
+    <br>
     <img alt="GitHub Downloads (specific asset, all releases)" src="https://img.shields.io/github/downloads/Rayiumir/Panda/Panda">
 </div>
 
