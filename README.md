@@ -8,6 +8,21 @@
 
 This is a simple and light theme for WordPress blogging.
 
+# Features
+
+- Menus
+- Dark Mode
+- Search
+- Button Like
+- Translate
+- Tag
+- Related Posts
+- Category
+- Social Network Sharing
+- Tabs News and Comments
+- Reponsive Theme
+- and ...
+
 # ScreenShot
 
 <table class="table">
