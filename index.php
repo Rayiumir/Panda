@@ -3,3 +3,4 @@
         <?php get_template_part('parts/header'); ?>
         <?php get_template_part('parts/posts'); ?>
 <?php get_footer(); ?>
+

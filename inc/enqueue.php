@@ -2,8 +2,8 @@
 
 define("RAYIUM_URL", get_template_directory_uri());
 define("RAYIUM_STYLE", get_stylesheet_uri());
-define("RAYIUM_PARCHLINUX_VERSION", '1.0.0');
-define("RAYIUM_PARCHLINUX_ASSETS_VERSION", defined('WP_DEBUG') && WP_DEBUG ? time() : RAYIUM_PARCHLINUX_VERSION);
+define("RAYIUM_PANDA_VERSION", '1.0.0');
+define("RAYIUM_PANDA_ASSETS_VERSION", defined('WP_DEBUG') && WP_DEBUG ? time() : RAYIUM_PANDA_VERSION);
 
 // Calling Files style
 
@@ -26,13 +26,13 @@ function Rayium_Styles(): void {
     wp_enqueue_style(
         'like',
         RAYIUM_URL . '/css/likes.css',
-        '2.0.0'
+        '0.5'
     );
 
     wp_enqueue_style(
         'style',
         RAYIUM_STYLE,
-        RAYIUM_PARCHLINUX_VERSION
+        RAYIUM_PANDA_VERSION
     );
 
 }
@@ -48,7 +48,7 @@ function Rayium_Scripts(): void {
         'main',
         RAYIUM_URL . '/js/main.js',
         $deps,
-	    RAYIUM_PARCHLINUX_ASSETS_VERSION,
+	    RAYIUM_PANDA_ASSETS_VERSION,
         true
     );
 
