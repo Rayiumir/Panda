@@ -239,6 +239,7 @@ h3.postcomment a {
 [data-theme="dark"] input,
 textarea {
     background-color: #0e2338 !important;
+    color: #fff !important;
 }
 
 /* GT Translate */
