@@ -92,6 +92,11 @@ ul li a {
     text-decoration: none;
 }
 
+.wp-block-heading, .wp-block-search__label {
+    font-size: 21px;
+    font-weight: bold;
+}
+
 .imgauthor img {
     border-radius: 15px;
 }
@@ -224,13 +229,6 @@ h3.postcomment a {
     color: #fff !important;
 }
 
-[data-theme="dark"] a.glink {
-    color: #0e2338 !important;
-}
-
-[data-theme="dark"] a.gt_switcher-popup span {
-    color: #fff !important;
-}
 
 [data-theme="dark"] #heart-full {
     color: red !important;
@@ -240,16 +238,6 @@ h3.postcomment a {
 textarea {
     background-color: #0e2338 !important;
     color: #fff !important;
-}
-
-/* GT Translate */
-
-.gt_white_content.notranslate {
-    border-radius: 15px;
-}
-
-.gt {
-    margin: -2px 10px 0px 0px;
 }
 
 /* Calendar */
