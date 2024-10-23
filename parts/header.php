@@ -31,7 +31,6 @@
             ?>
             
             <div class="d-flex">
-                <div id="gt-mordadam" class="gt"></div>
                 <div class="form-check form-switch">
                     <input class="form-check-input" type="checkbox" class="custom-control-input" id="darkSwitch">
                     <label class="custom-control-label" for="darkSwitch">Dark Mode</label>

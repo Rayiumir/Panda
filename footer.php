@@ -27,19 +27,5 @@
     </main>
     <!-- JavaScripts -->
     <?php wp_footer(); ?>
-    <script type="text/javascript">
-        window.gtranslateSettings = window.gtranslateSettings || {};
-        window.gtranslateSettings['gt'] = {
-            "default_language": "en",
-            "languages": ["fa", "en"],
-            "wrapper_selector": "#gt-mordadam",
-            "native_language_names": 1,
-            "flag_style": "2d",
-            "flag_size": 24,
-            "horizontal_position": "inline",
-            "flags_location": "<?php echo RAYIUM_URL; ?>/flags\/"
-        };
-    </script>
-    <script src="<?php echo RAYIUM_URL; ?>/js/gt.min.js" data-gt-widget-id="gt"></script>
 </body>
 </html>
