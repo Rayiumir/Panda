@@ -16,7 +16,6 @@ This is a simple and light theme for WordPress blogging.
 - Dark Mode
 - Search
 - Button Like
-- Translate
 - Tag
 - Related Posts
 - Category
