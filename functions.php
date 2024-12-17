@@ -128,3 +128,17 @@ function disable_widgets_block_editor() {
 	remove_theme_support( 'widgets-block-editor' );
 }
 add_action( 'after_setup_theme', 'disable_widgets_block_editor' );
+
+
+// function get_logo_urls() {
+
+//     $logoLight = esc_url(ot_get_option('logoLight'));
+//     $logoDark = esc_url(ot_get_option('logoDark'));
+
+//     wp_send_json([
+//         'logoLight' => $logoLight,
+//         'logoDark' => $logoDark,
+//     ]);
+// }
+// add_action('wp_ajax_get_logo_urls', 'get_logo_urls');
+// add_action('wp_ajax_nopriv_get_logo_urls', 'get_logo_urls');

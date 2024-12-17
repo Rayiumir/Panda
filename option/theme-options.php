@@ -37,8 +37,17 @@ array(
 ),
 
 array(
-  'id'          => 'logo',
-  'label'       => 'Logo',
+  'id'          => 'logoDark',
+  'label'       => 'Logo Dark',
+  'desc'        => '',
+  'std'         => '',
+  'type'        => 'upload',
+  'section'     => 'header'
+),
+
+array(
+  'id'          => 'logoLight',
+  'label'       => 'Logo Light',
   'desc'        => '',
   'std'         => '',
   'type'        => 'upload',

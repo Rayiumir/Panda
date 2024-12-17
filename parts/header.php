@@ -2,14 +2,18 @@
 <nav class="navbar navbar-expand-lg bg-body-tertiary rounded-4 shadow-sm">
     <div class="container-fluid">
         <?php 
-        $logo = ot_get_option('logo');
-        if(!empty($logo)) { 
-            if ( ot_get_option('off_1') != "off" ) {
+            $logoLight = esc_url(ot_get_option('logoLight'));
+            $logoDark = esc_url(ot_get_option('logoDark'));
+            if(!empty($logoLight) || !empty($logoDark)) { 
+                if ( ot_get_option('off_1') != "off" ) {
+            ?>
+            <a class="navbar-brand" href="<?php bloginfo('url') ?>">
+                <img src="<?php echo $logoLight; ?>" id="themeLogo" alt="<?php bloginfo( 'name' ) ?>" title="<?php bloginfo( 'name' ) ?>" srcset="">
+            </a>
+        <?php 
+            } 
+        } 
         ?>
-        <a class="navbar-brand" href="<?php bloginfo( 'url' ) ?>">
-            <img src="<?php echo $logo; ?>" style="width: 100px;" alt="<?php bloginfo( 'name' ) ?>" title="<?php bloginfo( 'name' ) ?>" srcset="">
-        </a>
-        <?php   }   }   ?>
         <button class="navbar-toggler rounded-4" type="button" data-bs-toggle="collapse"
             data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
             aria-expanded="false" aria-label="Toggle navigation">

@@ -58,8 +58,27 @@ function Rayium_Scripts(): void {
         '5.3.0',
         true
     );
+
+    wp_enqueue_script(
+        'darkmode',
+        RAYIUM_URL . '/js/darkmode.js',
+        $deps,
+	    RAYIUM_PANDA_ASSETS_VERSION,
+        true
+    );
+
+    // For Show Logos
+    
+    $logoLight = esc_url(ot_get_option('logoLight'));
+    $logoDark = esc_url(ot_get_option('logoDark'));
+
+    wp_localize_script('darkmode', 'themeLogoData', array(
+        'logoLight' => $logoLight,
+        'logoDark'  => $logoDark,
+    ));
 }
 add_action('wp_footer', 'Rayium_Scripts');
+
 
 
 
