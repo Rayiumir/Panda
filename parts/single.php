@@ -40,7 +40,7 @@
         <!-- End Posts -->
         <aside class="col-md-4">
             <?php get_template_part('parts/sorturl'); ?>
-            <?php get_template_part('parts/author'); ?>
+            <?php get_template_part('parts/inforauthor'); ?>
             <?php get_sidebar() ?>
         </aside>
         
